@@ -3,7 +3,7 @@ const rojo = document.getElementById('rojo')
 const amarillo = document.getElementById('amarillo')
 const naranja = document.getElementById('naranja')
 const azul = document.getElementById('azul')
-const ULTIMO_NIVEL = 3
+const ULTIMO_NIVEL = 10
 
 class Juego {
     constructor(){
@@ -104,7 +104,7 @@ class Juego {
     
     
     ganoElJuego(){
-        swal('Simón dice:', 'Ganaste!', 'success') //este devuelve una promesa
+        swal('Simón dice:', '¡Ganaste!', 'success') //este devuelve una promesa
         .then(this.inicializar) //como solo pasamos una funcion basta con ponerlo asi
 
     }
